@@ -1,0 +1,274 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+Colour scheme
+**************************************************/
+
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Raleway');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font-family: 'Bree Serif', serif;
+    padding: 0.2rem 0  0 0.7rem;
+    text-shadow: 0.15rem 0.15rem 0.3rem black;
+    text-align: center;
+    color: #42E566;
+    font-weight: bold;
+    
+}
+h2{
+    font: bold 2.1rem 'Alegreya', Georgia, serif;
+    text-align:left;
+    padding-left: 0.7rem;
+}
+
+li, p, a{
+    font-family: 'Raleway', sans-serif;
+    color: #01563E;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Open+Sans', Arial, monospace;
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+    background-color: #71B7EF;
+}
+header{
+    width: 100%;
+    background:url('/img/bg.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    min-height: 7.5rem;
+    background-repeat:no-repeat;
+    opacity: 0.9;
+    filter: alpha(opacity=60);
+    
+    /*    width: auto;*/
+}
+
+
+nav{
+    width: 100%;
+    margin: 0.8rem auto 1rem auto;
+    
+}
+nav>ul{
+    width: 100%;
+}
+nav li{
+    width: 100%;
+    list-style: none;
+    margin-bottom: 0.8rem;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #56004C;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    background-color: #003056;
+    color: #EFEBA2;
+}
+main{
+    width: 100%;
+}
+.col{
+    float: none;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.second{
+    margin-bottom: 2.0rem;
+}
+.col img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: #6A5ABC;
+    margin-bottom: 0.5rem;
+}
+footer{
+    width: 100%;
+    color: #336699;
+}
+
+p{
+    padding: 0.7rem;
+    font-size: 1.0rem;
+    line-height: 1.4;
+}
+footer p, a{
+    color: #560113;
+}
+footer ul li{
+    margin: 0 0 0.4rem 0.7rem;
+    list-style-type: none;
+
+}
+
+/*Medium screen 600px~800px*/
+@media screen and (min-width:600px){
+    .wrapper{
+        width: 100%;
+        margin: 0 10px;
+    }
+  
+    nav{
+        width: 90%;
+        padding: 0.6rem 0;
+        margin: 1rem auto 1rem auto;
+            
+    }
+    nav li{
+        float: left;
+        width: 20%;
+    }
+
+    main{
+        width: 90%;
+        margin: 1rem auto 1rem auto;
+        
+    }
+    .col{
+        float: left;
+        width: 50%;
+        padding: 0.6rem 0.1rem;
+        margin-bottom: 2rem;
+      
+    }
+    .col img{
+        float: left;
+        width: 60%;
+        height: auto;
+        max-width: 100%;
+        background-color: #C4C1A4;
+        margin:0 0.3rem 0.1rem 0;
+    }
+    footer{
+        clear: both;
+        float: none;
+        width:90%;
+        margin: 1rem auto 1rem auto;
+    }
+    footer ul li{
+        display: inline;
+    }
+    
+    h1{
+        padding: 0.2rem 0  0 2.9rem;
+    }
+    
+    h2{
+        min-height: 2rem;
+    }
+}
+@media screen and (min-width: 800px){
+    .col img{
+        width: 50%; 
+    }
+    footer{
+        width:100%;
+        padding-left: 5.5%;
+    }
+    h1{
+        padding: 0.2rem 0  0 5.5%;
+        font-size: 4.5rem;
+    }
+    h2{
+        font-size: 2.4rem;
+    }
+    nav a:link{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    
+    
+}
+@media screen and (min-width: 1200px){
+    .wrapper{
+        width: 100%
+    }
+    nav{
+        width: 30%;
+        float: left;
+     
+        margin: 0.4 rem auto 1rem auto;
+            
+    }
+    nav li{
+        width: 100%;
+    }
+
+    main{
+        float: left;
+        width: 70%;
+/*        margin: 1rem auto 1rem auto;*/
+        
+    }
+    .col{
+        width: 50%;
+        padding: 0 0.4rem 0 0;
+/*        margin-bottom: 2rem;*/
+      
+    }
+    .second{
+        padding-right: 1.5rem;
+    }
+    .col img{
+        width: 55%; 
+    }
+        footer{
+        padding-left: 10.5%;
+    }
+    
+    h1{
+        padding: 0 0  0 10.5%;
+        font-size: 4.9rem;
+    }
+    h2{
+        font-size: 2.8rem;
+    }
+    nav a:link{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
