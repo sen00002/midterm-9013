@@ -61,7 +61,7 @@ pre, code, kbd{
 }
 header{
     width: 100%;
-    background:url('/img/bg.jpg');
+    background:url('../img/bg.jpg');
     background-size: cover;
     background-position: center 30%;
     margin-bottom: 2rem;
